@@ -56,3 +56,18 @@ var education = {
 	"display": function() {}
 };
 
+var work = {
+	"jobs": [
+		{
+			"employer": "Shenyang Northern Software Institute",
+			"title": "Teacher",
+			"location": "Shenyang China",
+			"dates": "2015/04/01-Now",
+			"description": "I'm teaching 'Introduction to Programming(Python)', 'Introdution to HTML&CSS' and 'Introdution to Computer Science
+			in NSI. Except for this, I'm responsible for practicing professional skills of students."
+		}
+	],
+
+	"display": function(){}
+};
+
