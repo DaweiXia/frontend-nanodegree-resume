@@ -71,3 +71,16 @@ var work = {
 	"display": function(){}
 };
 
+var projects = {
+	"projects": [
+		{
+			"title": "Campus Ambassador of Coursera and MOOC Achademy",
+			"dates": "2014/03/01-2015/03/01",
+			"description": "Organize learning groups or activities that related to learning or MOOC to promote MOOC in Shenyang
+			 Aerospace Universiyt",
+			"images": ["http://3.im.guokr.com/VwbwQvy11HNPq3hjeldVsnOQRL1nu3Zzr_SyERfV99eIAgAA5AEAAEpQ.jpg?imageView2/1/w/570/h/425"]
+		}
+	],
+
+	"display": function(){}
+}
