@@ -16,3 +16,43 @@ var bio = {
 	"biopic": "https://avatars1.githubusercontent.com/u/5789704?v=3&s=460",
 	"display": function() {}
 };
+
+
+var education = {
+	"schools": [
+		{
+			"name": "Huaibei Normal University",
+			"location": "Huaibei China",
+			"degree": "Bachelor",
+			"majors": ["Applications of Computer Technology"],
+			"dates": 20110701,
+			"url": "http://www.hbcnc.edu.cn/"
+		},
+		{
+			"name": "Shenyang Aerospace Universiyt",
+			"location": "Shenyang China",
+			"degree": "Master",
+			"majors": ["Computer Technology"],
+			"dates": 20150301,
+			"url": "http://www.sau.edu.cn/"
+		}
+	],
+
+	"onlineCourses": [
+		{
+			"title": "Introduction to Computational Thinking and Data Science",
+			"school": "MIT",
+			"date": 20150506,
+			"url": "https://courses.edx.org/courses/course-v1:MITx+6.00.2x_3+1T2015/info"
+		},
+		{
+			"title": "Introduction to Computer Science and Programming Using Python",
+			"school": "MIT",
+			"date": 20150311,
+			"url": "https://courses.edx.org/courses/MITx/6.00.1x_5/1T2015/info",
+		}
+	],
+
+	"display": function() {}
+};
+
