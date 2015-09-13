@@ -63,8 +63,8 @@ var work = {
 			"title": "Teacher",
 			"location": "Shenyang China",
 			"dates": "2015/04/01-Now",
-			"description": "I'm teaching 'Introduction to Programming(Python)', 'Introdution to HTML&CSS' and 'Introdution to Computer Science
-			in NSI. Except for this, I'm responsible for practicing professional skills of students."
+			"description": "I am teaching Introduction to Programming(Python), Introdution to HTML&CSS and Introdution to Computer Science in NSI. \
+			Except for this, I am responsible for practicing professional skills of students."
 		}
 	],
 
@@ -76,7 +76,7 @@ var projects = {
 		{
 			"title": "Campus Ambassador of Coursera and MOOC Achademy",
 			"dates": "2014/03/01-2015/03/01",
-			"description": "Organize learning groups or activities that related to learning or MOOC to promote MOOC in Shenyang
+			"description": "Organize learning groups or activities that related to learning or MOOC to promote MOOC in Shenyang \
 			 Aerospace Universiyt",
 			"images": ["http://3.im.guokr.com/VwbwQvy11HNPq3hjeldVsnOQRL1nu3Zzr_SyERfV99eIAgAA5AEAAEpQ.jpg?imageView2/1/w/570/h/425"]
 		}
