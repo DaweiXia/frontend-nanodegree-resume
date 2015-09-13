@@ -136,3 +136,11 @@ for(school in education.schools){
 };
 
 $("#education").append(HTMLonlineClasses);
+$("#education").append(HTMLschoolStart);
+for(course in education.onlineCourses){
+	var onlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[course].title);
+	var onlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[course].school);
+	$(".education-entry:last").append(onlineTitle + onlineSchool);
+	$(".education-entry:last").append(HTMLonlineDates.replace("%data%", education.onlineCourses[course].date));
+	$(".education-entry:last").append(HTMLonlineURL.replace("%data%", education.onlineCourses[course].url));
+};
