@@ -41,13 +41,13 @@ var education = {
 	"onlineCourses": [
 		{
 			"title": "Introduction to Computational Thinking and Data Science",
-			"school": "MIT",
+			"school": "edx",
 			"date": 2015,
 			"url": "https://courses.edx.org/courses/course-v1:MITx+6.00.2x_3+1T2015/info"
 		},
 		{
 			"title": "Introduction to Computer Science and Programming Using Python",
-			"school": "MIT",
+			"school": "edx",
 			"date": 2015,
 			"url": "https://courses.edx.org/courses/MITx/6.00.1x_5/1T2015/info",
 		}
@@ -136,4 +136,3 @@ for(school in education.schools){
 };
 
 $("#education").append(HTMLonlineClasses);
-
