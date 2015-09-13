@@ -144,3 +144,5 @@ for(course in education.onlineCourses){
 	$(".education-entry:last").append(HTMLonlineDates.replace("%data%", education.onlineCourses[course].date));
 	$(".education-entry:last").append(HTMLonlineURL.replace("%data%", education.onlineCourses[course].url));
 };
+
+$("#mapDiv").append(googleMap);
