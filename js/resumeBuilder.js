@@ -123,5 +123,6 @@ for(project in projects.projects){
 	};
 };
 
+$("#education").append(HTMLschoolStart);
 
 
