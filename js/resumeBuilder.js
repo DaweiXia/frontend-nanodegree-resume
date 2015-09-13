@@ -94,4 +94,6 @@ $("#topContacts").append(HTMLtwitter.replace("%data%", bio.contacts.twitter));
 $("#topContacts").append(HTMLgithub.replace("%data%", bio.contacts.github));
 $("#topContacts").append(HTMLlocation.replace("%data%", bio.contacts.location));
 
+$("#header").append(HTMLbioPic.replace("%data%", bio.biopic));
+
 
