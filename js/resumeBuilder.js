@@ -7,8 +7,8 @@ var bio = {
 	"contacts": {
 		"mobile": "15555555555",
 		"email": "example@example.com",
-		"github": "https://github.com/DaweiXia",
-		"twitter": "I don't use twitter",
+		"github": "github.com/DaweiXia",
+		"twitter": "@David",
 		"location": "Shenyang China"
 	},
 	"welcomMessage": "Welcom to my site! I am Dawei!",
@@ -87,5 +87,11 @@ var projects = {
 
 $("#header").prepend(HTMLheaderRole.replace("%data%", bio.role));
 $("#header").prepend(HTMLheaderName.replace("%data%", bio.name));
+
+$("#topContacts").append(HTMLmobile.replace("%data%", bio.contacts.mobile));
+$("#topContacts").append(HTMLemail.replace("%data%", bio.contacts.email));
+$("#topContacts").append(HTMLtwitter.replace("%data%", bio.contacts.twitter));
+$("#topContacts").append(HTMLgithub.replace("%data%", bio.contacts.github));
+$("#topContacts").append(HTMLlocation.replace("%data%", bio.contacts.location));
 
 
