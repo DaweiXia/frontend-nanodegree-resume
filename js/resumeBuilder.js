@@ -102,4 +102,6 @@ for(i in bio.skills){
 	$("#skills").append(HTMLskills.replace("%data%", bio.skills[i]));
 };
 
+$("#workExperience").append(HTMLworkStart);
+
 
