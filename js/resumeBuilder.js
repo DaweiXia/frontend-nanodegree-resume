@@ -25,7 +25,7 @@ var education = {
 			"location": "Huaibei China",
 			"degree": "Bachelor",
 			"majors": ["Applications of Computer Technology"],
-			"dates": 20110701,
+			"dates": 2011,
 			"url": "http://www.hbcnc.edu.cn/"
 		},
 		{
@@ -33,7 +33,7 @@ var education = {
 			"location": "Shenyang China",
 			"degree": "Master",
 			"majors": ["Computer Technology"],
-			"dates": 20150301,
+			"dates": 2015,
 			"url": "http://www.sau.edu.cn/"
 		}
 	],
@@ -42,13 +42,13 @@ var education = {
 		{
 			"title": "Introduction to Computational Thinking and Data Science",
 			"school": "MIT",
-			"date": 20150506,
+			"date": 2015,
 			"url": "https://courses.edx.org/courses/course-v1:MITx+6.00.2x_3+1T2015/info"
 		},
 		{
 			"title": "Introduction to Computer Science and Programming Using Python",
 			"school": "MIT",
-			"date": 20150311,
+			"date": 2015,
 			"url": "https://courses.edx.org/courses/MITx/6.00.1x_5/1T2015/info",
 		}
 	],
@@ -124,5 +124,16 @@ for(project in projects.projects){
 };
 
 $("#education").append(HTMLschoolStart);
+for(school in education.schools){
+	var schoolName = HTMLschoolName.replace("%data%", education.schools[school].name);
+	var schoolDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
+	$(".education-entry").append(schoolName + schoolDegree);
+	$(".education-entry").append(HTMLschoolDates.replace("%data%", education.schools[school].dates));
+	$(".education-entry").append(HTMLschoolLocation.replace("%data%", education.schools[school].location));
+	for(major in education.schools[school].majors){
+		$(".education-entry").append(HTMLschoolMajor.replace("%data%", education.schools[school].majors[major]));
+	};
+};
+
 
 
