@@ -111,8 +111,17 @@ for(job in work.jobs){
 	$("div.work-entry").append(HTMLworkDates.replace("%data%", work.jobs[job].dates));
 	$("div.work-entry").append(HTMLworkLocation.replace("%data%", work.jobs[job].location));
 	$("div.work-entry").append(HTMLworkDescription.replace("%data%", work.jobs[job].description));
-}
+};
 
 $("#projects").append(HTMLprojectStart);
+for(project in projects.projects){
+	$(".project-entry").append(HTMLprojectTitle.replace("%data%", projects.projects[project].title));
+	$(".project-entry").append(HTMLprojectDates.replace("%data%", projects.projects[project].dates));
+	$(".project-entry").append(HTMLprojectDescription.replace("%data%", projects.projects[project].description));
+	for(image in projects.projects[project].images){
+		$(".project-entry").append(HTMLprojectImage.replace("%data%", projects.projects[project].images[image]));
+	};
+};
+
 
 
