@@ -103,5 +103,14 @@ for(i in bio.skills){
 };
 
 $("#workExperience").append(HTMLworkStart);
+for(job in work.jobs){
+	var workEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+	var workTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
+	$("div.work-entry").append(workEmployer + workTitle);
+
+	$("div.work-entry").append(HTMLworkDates.replace("%data%", work.jobs[job].dates));
+	$("div.work-entry").append(HTMLworkLocation.replace("%data%", work.jobs[job].location));
+	$("div.work-entry").append(HTMLworkDescription.replace("%data%", work.jobs[job].description));
+}
 
 
