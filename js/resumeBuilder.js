@@ -97,4 +97,7 @@ $("#topContacts").append(HTMLlocation.replace("%data%", bio.contacts.location));
 $("#header").append(HTMLbioPic.replace("%data%", bio.biopic));
 $("#header").append(HTMLwelcomeMsg.replace("%data%", bio.welcomMessage));
 
+$("#header").append(HTMLskillsStart);
+
+
 
