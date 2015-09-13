@@ -113,4 +113,6 @@ for(job in work.jobs){
 	$("div.work-entry").append(HTMLworkDescription.replace("%data%", work.jobs[job].description));
 }
 
+$("#projects").append(HTMLprojectStart);
+
 
