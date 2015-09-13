@@ -135,5 +135,5 @@ for(school in education.schools){
 	};
 };
 
-
+$("#education").append(HTMLonlineClasses);
 
