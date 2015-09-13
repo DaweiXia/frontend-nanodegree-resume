@@ -83,4 +83,5 @@ var projects = {
 	],
 
 	"display": function(){}
-}
+};
+
