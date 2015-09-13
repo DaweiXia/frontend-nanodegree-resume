@@ -14,7 +14,9 @@ var bio = {
 	"welcomMessage": "Welcom to my site! I am Dawei!",
 	"skills": ["Python", "HTML", "CSS", "JS", "JQuery"],
 	"biopic": "https://avatars1.githubusercontent.com/u/5789704?v=3&s=460",
-	"display": function() {}
+	"display": function() {
+		addBio();
+	}
 };
 
 
@@ -53,7 +55,9 @@ var education = {
 		}
 	],
 
-	"display": function() {}
+	"display": function() {
+		addEducation();
+	}
 };
 
 var work = {
@@ -68,7 +72,9 @@ var work = {
 		}
 	],
 
-	"display": function(){}
+	"display": function(){
+		addWorkExperience();
+	}
 };
 
 var projects = {
@@ -82,7 +88,9 @@ var projects = {
 		}
 	],
 
-	"display": function(){}
+	"display": function(){
+		addProjects();
+	}
 };
 
 function addContacts(id){
@@ -165,9 +173,9 @@ function addMap(){
 	$("#mapDiv").append(googleMap);
 }
 
-addBio();
-addWorkExperience();
-addProjects();
-addEducation();
+bio.display();
+work.display();
+projects.display();
+education.display();
 addMap();
 addContacts("#footerContacts");
