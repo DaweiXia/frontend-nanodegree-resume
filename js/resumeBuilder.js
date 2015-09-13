@@ -98,6 +98,8 @@ $("#header").append(HTMLbioPic.replace("%data%", bio.biopic));
 $("#header").append(HTMLwelcomeMsg.replace("%data%", bio.welcomMessage));
 
 $("#header").append(HTMLskillsStart);
-
+for(i in bio.skills){
+	$("#skills").append(HTMLskills.replace("%data%", bio.skills[i]));
+};
 
 
