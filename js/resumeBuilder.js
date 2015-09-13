@@ -85,3 +85,4 @@ var projects = {
 	"display": function(){}
 };
 
+$("#header").append(HTMLheaderName.replace("%data%", bio.name));
