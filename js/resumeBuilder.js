@@ -166,12 +166,14 @@ var projects = {
 	}
 };
 
-function addMap(){
-	$("#mapDiv").append(googleMap);
+var map = {
+	"display": function(){
+		$("#mapDiv").append(googleMap);
+	}
 }
 
 bio.display();
 work.display();
 projects.display();
 education.display();
-addMap();
+map.display();
